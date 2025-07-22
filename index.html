@@ -1,58 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Academia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Bartlmae</title>
+  <style>
+    /* Base */
+    body {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #333;
+      background: #f0f2f5;
+      line-height: 1.6;
+    }
+    .intro {
+      font-size: 1rem;
+      color: #555;
+      text-align: center;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.6rem;
+      margin: 0.2rem 0;
+      letter-spacing: -1px;
+      color: #222;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+      margin: 0.4rem 0;
+    }
+    .avatar {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1.5rem;
+      border: 6px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transform: translateX(-12px);
+      background: #fff;
+    }
+    .links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .links a {
+      margin: 0 0.6rem;
+      font-size: 0.95rem;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .links a:hover { text-decoration: underline; }
+    main section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: #005288;
+      margin-bottom: 0.8rem;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 50px;
+      height: 3px;
+      background: #005288;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    ul { list-style: none; padding: 0; }
+    ul li { margin: 1.2rem 0; }
+    ul li a { font-weight: 600; color: #0066cc; text-decoration: none; }
+    ul li a:hover { text-decoration: underline; }
+    ul li p { margin: 0.4rem 0 0; color: #444; font-size: 0.95rem; }
+    .contact {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .contact p {
+      margin: 0.6rem 0;
+      color: #555;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Academia</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <section id="about" class="container my-5">
-        <h2>About Me</h2>
-        <p>Welcome to my personal academic website. I am a researcher specializing in ...</p>
-    </section>
-    
-    <section id="research" class="container my-5">
-        <h2>Research</h2>
-        <p>Here is an overview of my research interests...</p>
-    </section>
-    
-    <section id="publications" class="container my-5">
-        <h2>Publications</h2>
+  <header>
+    <img src="img1.jpeg" alt="Simon Bartlmae" class="avatar">
+    <h1>Simon Bartlmae</h1>
+    <p>B.Sc. Student in Computer Science, University of Bonn</p>
+    <div class="links">
+      <!-- <a href="Simon_Bartlmae_CV.pdf" download>Download Full CV</a> -->
+      <a href="https://dblp.org/pid/395/0210.html" target="_blank">DBLP</a>
+      <a href="https://scholar.google.com/citations?user=V_jDg38AAAAJ&hl=de" target="_blank">Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Simon-Bartlmae" target="_blank">ResearchGate</a>
+    </div>
+  </header>
+
+  <p class="intro">I am a final-year Computer Science student at the University of Bonn, passionate about algorithms and complexity. I currently serve as a Research Assistant in Prof. Dr. Heiko Röglin’s group and previously worked under Prof. Dr. Anne Driemel. I spent an exchange semester at the University of British Columbia in Vancouver and am honored to be supported by the Studienstiftung des deutschen Volkes scholarship.</p>
+  <p style="text-align:center; color:#555; margin-bottom:2rem;">Please feel free to contact me on my research on [lastname]@uni-bonn.de</p>
+  <main>
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="card">
         <ul>
-            <li><a href="#">Paper 1 - Title</a></li>
-            <li><a href="#">Paper 2 - Title</a></li>
+          <li>
+            <a>Parametrized Algorithms for the Drone Delivery Problem</a>
+            <p>S. Bartlmae*, A. Hene*, J. Könen*, H. Röglin — submitted to ISAAC 2025 </p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/978-3-031-92935-9_13" target="_blank">On the Hardness of the Drone Delivery Problem</a>
+            <p>S. Bartlmae*, A. Hene*, K. Luo — Proceedings of CIAC 2025 (Part II) 200-215 </p>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2412.07046" target="_blank">NP-hardness and a PTAS for the Euclidean Steiner Line Problem</a>
+            <p>S. Bartlmae*, P. Jünger*, E. Langetepe — preprint: https://arxiv.org/abs/2412.07046, 2024 </p>
+          </li>
         </ul>
+        (*) denotes (equal) first-author contribution
+      </div>
+
     </section>
-    
-    <section id="contact" class="container my-5">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/your-github-username">your-github-username</a></p>
+
+    <!-- <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <ul>
+          <li>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/drone-delivery-problem" target="_blank">Drone Delivery Solver</a>
+            <p>Exact & heuristic algorithms for drone routing optimization.</p>
+          </li>
+          <li>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/euclidean-steiner-line" target="_blank">Steiner Line Toolkit</a>
+            <p>PTAS implementation & hardness experiments in computational geometry.</p>
+          </li>
+          <li>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/algorithm-visualizations" target="_blank">Algorithm Visualizations</a>
+            <p>Interactive JavaScript demos of combinatorial algorithms.</p>
+          </li>
+        </ul>
+      </div>
+    </section>-->
+
+    <section id="awards">
+      <h2>Awards & Scholarships</h2>
+      <div class="card">
+        <ul>
+          <li>Studienstiftung des deutschen Volkes (2025–present)</li>
+          <li>Deutschlandstipendium (2023–2025)</li>
+          <li>Finalist & Special Prize for the most original idea, German National CS Competition (BWINF) 2021</li>
+        </ul>
+      </div>
     </section>
+
     
-    <footer class="text-center py-3 bg-light">
-        <p>&copy; 2024 My Academia</p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </main>
+
+  <footer>
+    © 2025 Simon Bartlmae
+  </footer>
 </body>
 </html>
